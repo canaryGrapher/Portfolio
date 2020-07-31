@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Portfolio page of Yash Aryan">
+    <meta name="keywords"
+        content="student, designer, portfolio, college, India, Indian, college student, ui, ux, uiux, porfolio website">
+    <meta name="theme-color" content="#f57f17">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Yash Aryan</title>
+    <meta name="title" content="CyberManipal | MIST">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Yash Aryan">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>  -->
+</head>
+<body data-spy="scroll" data-target="pageNavbar">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@1,200&display=swap');
+        .nav-link:hover, .nav-link:active {
+            font-size: 2.4rem !important;
+            transition-duration: 0.5s;
+            color: #f3f0f0 !important;
+        }
+
+        .background {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        }
+        body {
+            background-image: url("./Resources/cool-background.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .rocket {
+                position: absolute;
+                bottom: 0%;
+                right: 10%;
+                animation: fly 3s ease-out;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes fly {
+                0% {
+                    bottom: -1200px;   
+                }
+                100% {
+                    bottom: 100%;
+                }
+            }
+        a {
+            color: #fff;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            Particles.init({
+                selector: '.background',
+                color: '#ffffff',
+                connectParticles: true,
+                retina_detect: true,
+            });
+        };
+    </script>
+        <nav id="pageNavbar" class="navbar navbar-expand fixed-top navbar-light bg-transparent justify-content-center">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link pl-md-5" style="font-size: 1.6rem" href="#skills">Skills</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link pl-md-5" style="font-size: 1.6rem" href="#works">Works</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pl-md-5" style="font-size: 1.6rem" href="#">Connect</a>
+                </li>
+              </ul>
+        </nav>
+
+    <div class="container-fluid p-0 m-0" style="overflow-x: hidden;">
+        
+        <!-- container for landing section -->
+        <div class="container pl-2 d-flex flex-column justify-content-center" style="height: 100vh;">
+            <p class="display-4 m-0 p-0 ml-3">I am</p>
+            <p class="display-1 m-0 p-0 font-weight-bolder">Yash Aryan</p>
+            <p class="ml-3" style="font-size: 1.9rem;"><span id="typed" style="color: #ffffff"></span></p>
+            <script>
+                var typed = new Typed('#typed', {
+                      strings: ['Programmer', 'UI UX Designer', 'Web Developer'],
+                      loop: true,
+                      loopCount: Infinity,
+                      typeSpeed: 10,
+                      backSpeed: 10,
+                      showCursor: true,
+                      cursorChar: '<span class="text-light">_</span>',
+                      autoInsertCss: true,
+                      contentType: 'html',
+                });
+              </script>
+            <canvas class="background"></canvas>
+        </div>
+
+        <!-- container for about me section -->
+        <div class="container-fluid p-0 m-0 d-flex flex-column justify-content-center" style="height: 100vh; background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9),  rgb(0, 0, 0));">
+                
+                <!-- for desktop site -->
+                <div class="row d-none d-md-flex flex-row justify-content-center">
+                    <div class="container-fluid" style="background-image: url('./Resources/background.jpg');background-attachment: fixed; height: 80vh; width: 80vw; background-size: cover;">
+                        <div class="row h-100">
+                            <div class="col-6 text-right d-flex flex-column justify-content-center">
+                                <h1 style="color: rgb(255, 255, 255);font-family: 'Permanent Marker', cursive; font-size: 3.6rem">About me</h1>
+                            </div>
+                            <div class="col-6 d-flex flex-column justify-content-center">
+                                <p class="text-light" style="font-size: 1.2rem;">I like designing websites, discussing ideas, and meeting new people bundled with a deep passion for building things from scratch. I am an immense craze for DIYs, fiction, country music, and movies. I am always learning new things that make me a better developer everyday. I am open to new ideas and hop onboard new projects if I like it. I'm always full of ideas, so you'll always find me working on something or the other.</p>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+
+                <!-- for mobile site -->
+                <div class="row d-md-none">
+                        <div class="row text-center">
+                            <div class="col-12">
+                                <h1 style="color: rgb(255, 255, 255);font-family: 'Permanent Marker', cursive; font-size: 3.6rem">About me</h1>
+                            </div>
+                            <div class="col-11 mx-auto d-block">
+                                <p class="text-light text-center" style="font-size: 1.2rem;">I like designing websites, discussing ideas, and meeting new people bundled with a deep passion for building things from scratch. I am an immense craze for DIYs, fiction, country music, and movies. I am always learning new things that make me a better developer everyday. I am open to new ideas and hop onboard new projects if I like it. I'm always full of ideas, so you'll always find me working on something or the other.</p>
+                                <img class="img" src="./Resources/background.jpg" height="200" />
+                            </div>
+                        </div> 
+                </div>
+        </div>
+
+        <!-- container for my skills section -->
+        <div class="container-fluid p-0 m-0 pt-5" id="skills" style="color: rgb(255, 255, 255); background-color: black;">
+            <div class="container p-0 mx-auto">
+                <div class="row text-center">
+                    <h1 class="text-center w-100 mt-4" style="font-family: 'Permanent Marker', cursive; font-size: 3.6rem">My Skills</h1>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-lg-3 d-flex flex-column justify-content-center">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="./Resources/html.png" width="120" class="img skill-bar m-5" style="filter: drop-shadow(5px 10px 30px rgba(205, 205, 205, 0.2))">
+                        </div>
+
+                        <p class="text-center">Seasoned HTML scripter</p>
+                    </div>
+                    <div class="col-6 col-lg-3 d-flex flex-column justify-content-center">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="./Resources/css.png" width="120" class="img skill-bar m-5" style="filter: drop-shadow(5px 10px 30px rgba(205, 205, 205, 0.2))">
+                        </div>
+
+                        <p class="text-center">Seasoned HTML scripter</p>
+                    </div>
+                    <div class="col-6 col-lg-3 d-flex flex-column justify-content-center">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="./Resources/javascipt.png" width="120" class="img skill-bar m-5" style="filter: drop-shadow(5px 10px 30px rgba(205, 205, 205, 0.2))">
+                        </div>
+
+                        <p class="text-center">Seasoned HTML scripter</p>
+                    </div>
+                    <div class="col-6 col-lg-3 d-flex flex-column justify-content-center">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="./Resources/react.png" width="120" class="img skill-bar m-5" style="filter: drop-shadow(5px 10px 30px rgba(205, 205, 205, 0.2))">
+                        </div>
+
+                        <p class="text-center">Seasoned HTML scripter</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-lg-3 d-flex flex-column justify-content-center">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="./Resources/node.png" width="120" class="img skill-bar m-5" style="filter: drop-shadow(5px 10px 30px rgba(205, 205, 205, 0.2))">
+                        </div>
+
+                        <p class="text-center">Seasoned Developer</p>
+                    </div>
+                    <div class="col-6 col-lg-3 d-flex flex-column justify-content-center">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="./Resources/uiux.png" width="120" class="img skill-bar m-5" style="filter: drop-shadow(5px 10px 30px rgba(205, 205, 205, 0.2))">
+                        </div>
+
+                        <p class="text-center">Seasoned Developer</p>
+                    </div>
+                    <div class="col-6 col-lg-3 d-flex flex-column justify-content-center">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="./Resources/python.png" width="120" class="img skill-bar m-5" style="filter: drop-shadow(5px 10px 30px rgba(205, 205, 205, 0.2))">
+                        </div>
+
+                        <p class="text-center">Seasoned Developer</p>
+                    </div>
+                    <div class="col-6 col-lg-3 d-flex flex-column justify-content-center">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="./Resources/cpp.png" width="120" class="img skill-bar m-5" style="filter: drop-shadow(5px 10px 30px rgba(205, 205, 205, 0.2))">
+                        </div>
+
+                        <p class="text-center">Seasoned Developer</p>
+                    </div>
+                </div>
+                <div class="row d-flex flex-row justify-content-center">
+                    <div class="col-6 col-lg-3 d-flex flex-column justify-content-center">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="./Resources/arduino.png" width="120" class="img skill-bar m-5" style="filter: drop-shadow(5px 10px 30px rgba(205, 205, 205, 0.2))">
+                        </div>
+                        <p class="text-center">Seasoned Developer</p>
+                    </div>
+                    <div class="col-6 col-lg-3 d-flex flex-column justify-content-center">
+                        <div class="d-flex flex-row justify-content-center">
+                            <img src="./Resources/blockchain.png" width="120" class="img skill-bar m-5" style="filter: drop-shadow(5px 10px 30px rgba(205, 205, 205, 0.2))">
+                        </div>
+                        <p class="text-center">Seasoned Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- container for certificates -->
+        <div class="container-fluid p-0 m-0 pt-5 pb-5" style="background-color: black; color: rgb(255, 255, 255);">
+            <div class="row text-center pt-5 pb-3">
+                <h1 class="text-center w-100 mt-4" style="font-family: 'Permanent Marker', cursive; font-size: 3.6rem">Certificates</h1>
+                <p class="text-center w-100 pl-3 pr-3">I don't like to flaunt, but these are a result of my hard work.</p>
+            </div>
+            <div class="container pr-5 pl-5">
+                <div class="card-columns">
+                    <div class="card border-0">
+                        <img class="card-img" src="./Resources/Certificates/blockchain.png" alt="Certificate Preview" onclick="window.location.href = 'https://www.coursera.org/account/accomplishments/specialization/certificate/PP6JELVRVAHC';">
+                    </div>
+                    <div class="card border-0">
+                        <img class="card-img" src="./Resources/Certificates/blockchainBasics.png" alt="Certificate Preview" onclick="window.location.href = 'www.google.com';">
+                    </div>
+                    <div class="card border-0">
+                        <img class="card-img" src="./Resources/Certificates/blockchainPlatforms.png" alt="Certificate Preview" onclick="window.location.href = 'www.google.com';">
+                    </div>
+                    <div class="card border-0">
+                    <img class="card-img" src="./Resources/Certificates/smartcontracts.png" alt="Certificate Preview" onclick="window.location.href = 'www.google.com';">
+                    </div>
+                    <div class="card border-0">
+                        <img class="card-img" src="./Resources/Certificates/dapps.png" alt="Certificate Preview" onclick="window.location.href = 'www.google.com';">
+                    </div>
+                    <div class="card border-0">
+                        <img class="card-img" src="./Resources/Certificates/bootstrap.png" alt="Certificate Preview" onclick="window.location.href = 'www.google.com';">
+                    </div>
+                    <div class="card border-0">
+                        <img class="card-img" src="./Resources/Certificates/css3.png" alt="Certificate Preview" onclick="window.location.href = 'www.google.com';">
+                    </div>
+                    <div class="card border-0">
+                        <img class="card-img" src="./Resources/Certificates/javascript.png" alt="Certificate Preview" onclick="window.location.href = 'https://www.coursera.org/account/accomplishments/certificate/AAEMW7SD97W7';">
+                    </div>
+                    <div class="card border-0">
+                        <img class="card-img" src="./Resources/Certificates/python.png" alt="Certificate Preview" onclick="window.location.href = 'www.google.com';">
+                    </div>
+                    <div class="card border-0">
+                        <img class="card-img" src="./Resources/Certificates/pythondatastructures.png" alt="Certificate Preview" onclick="window.location.href = 'www.google.com';">
+                    </div>
+                    <div class="card border-0">
+                        <img class="card-img" src="./Resources/Certificates/uiDesign.png" alt="Certificate Preview" onclick="window.location.href = 'www.google.com';">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- container for works -->
+        <div class="container-fluid" id="works" style="background-color: black; color: rgb(255, 255, 255);">
+            <div class="row text-center pt-5 pb-3">
+                <h1 class="text-center w-100 mt-4" style="font-family: 'Permanent Marker', cursive; font-size: 3.6rem">Works</h1>
+                <p class="text-center w-100 pl-3 pr-3">Projects are a way for me to kill time while learning something new. They keep me busy, also keeping me productive, because the best way to learn something is to do it</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="card col-12 col-sm-6 col-md-4 p-0 m-0 border-0 bg-transparent pr-2 pl-2 pt-3">
+                        <div class="card-header p-0 m-0 border-0">
+                            <img class="card-img-top" src="./Resources/projects/manipal.jpg" alt="SLCM API">
+                        </div>
+                        <div class="card-body p-0 m-0 border-0 text-center">
+                            <h2 class="card-title m-0 p-0">SLCM API</h2>
+                            <p class="card-text m-0 p-0">Content</p>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-sm-6 col-md-4 p-0 m-0 border-0 bg-transparent pr-2 pl-2 pt-3">
+                        <div class="card-header p-0 m-0 border-0">
+                            <img class="card-img-top" src="./Resources/projects/mist.jpg" alt="pokedex">
+                        </div>
+                        <div class="card-body p-0 m-0 border-0 text-center">
+                            <h2 class="card-title m-0 p-0">MIST</h2>
+                            <p class="card-text m-0 p-0">Content</p>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-sm-6 col-md-4 p-0 m-0 border-0 bg-transparent pr-2 pl-2 pt-3">
+                        <div class="card-header p-0 m-0 border-0">
+                            <img class="card-img-top" src="./Resources/projects/pokemon.jpg" alt="pokedex">
+                        </div>
+                        <div class="card-body p-0 m-0 border-0 text-center">
+                            <h2 class="card-title m-0 p-0">Pokedex</h2>
+                            <p class="card-text m-0 p-0">Content</p>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-sm-6 col-md-4 p-0 m-0 border-0 bg-transparent pr-2 pl-2 pt-3">
+                        <div class="card-header p-0 m-0 border-0">
+                            <img class="card-img-top" src="./Resources/projects/whatsapp.jpg" alt="pokedex">
+                        </div>
+                        <div class="card-body p-0 m-0 border-0 text-center">
+                            <h2 class="card-title m-0 p-0">WhatsApp Bulker</h2>
+                            <p class="card-text m-0 p-0">Content</p>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-sm-6 col-md-4 p-0 m-0 border-0 bg-transparent pr-2 pl-2 pt-3">
+                        <div class="card-header p-0 m-0 border-0">
+                            <img class="card-img-top" src="./Resources/projects/arduino.jpg" alt="pokedex">
+                        </div>
+                        <div class="card-body p-0 m-0 border-0 text-center">
+                            <h2 class="card-title m-0 p-0">WhatsApp Bulker</h2>
+                            <p class="card-text m-0 p-0">Content</p>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-sm-6 col-md-4 p-0 m-0 border-0 bg-transparent pr-2 pl-2 pt-3">
+                        <div class="card-header p-0 m-0 border-0">
+                            <img class="card-img-top" src="./Resources/projects/files.png" alt="pokedex">
+                        </div>
+                        <div class="card-body p-0 m-0 border-0 text-center">
+                            <h2 class="card-title m-0 p-0">Check Filer</h2>
+                            <p class="card-text m-0 p-0">Content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pb-5 pt-5" id="works" style="background-color: black; color: rgb(255, 255, 255);">
+            <div class="row text-center pt-5 pb-3">
+                <h1 class="text-center w-100 mt-4" style="font-family: 'Permanent Marker', cursive; font-size: 3.6rem">Connect</h1>
+                <p class="text-center w-100 pl-3 pr-3">If you want to collaborate with me, trust me, I love projects, or you just wanna connect, the following links can help you.</p>
+            </div>
+            <div class="container" style="font-size: 6rem; color: #fff !important; font-family: 'Open Sans', sans-serif !important;">
+                <div class="row text-center">
+                    <div class="col-6 col-md-4" onclick="window.location('https://dribbble.com/canaryGrapher')">
+                       <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-6 col-md-4" onclick="window.location('https://dribbble.com/canaryGrapher')">
+                       <a href=""><i class="fab fa-dribbble"></i></a>
+                    </div>
+                    <div class="col-6 col-md-4" onclick="window.location('https://dribbble.com/canaryGrapher')">
+                       <a href=""><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-6 col-md-4" onclick="window.location('')">
+                       <a href="mailto:itsme@yasharyan.xyz"><i class="far fa-envelope"></i></a>
+                    </div>
+                    <div class="col-6 col-md-4" onclick="window.location('')">
+                       <a href="https://stackoverflow.com/users/11288471/greyshader"><i class="fab fa-stack-overflow"></i></a>
+                    </div>
+                    <div class="col-6 col-md-4" onclick="window.location('https://dribbble.com/canaryGrapher')">
+                       <a href=""><i class="fab fa-skype"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center text-light pb-5 pt-5" style="background-color: black;">
+            <p>This website was created by Yash Aryan</p>
+        </div>
+
+
+                    <!-- type: 'horizontalBar',
+                 data: {
+                     labels: ['HTML', 'CSS', 'Javascript', 'Node.js', 'React', 'Python', 'C++', 'Arduino', 'UI UX', 'Blockchain'],
+                         label: 'Profiency',
+                         data: [90, 85, 70, 65, 35, 80, 40, 60, 95, 25]
+                 } -->
+    </div>
+    
+    <img class="rocket d-none d-md-inline" src="https://cdn4.iconfinder.com/data/icons/whsr-january-flaticon-set/512/rocket.png">   
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.1/particles.min.js"></script>
+</body>
+</html>
